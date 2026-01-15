@@ -1,0 +1,299 @@
+\documentclass[a4paper]{article}
+
+\input{preambula.tex}
+
+\begin{document}
+
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyhead{}
+\fancyfoot[C]{
+    Algoritmi za urejanje podatkov, 2025, by P. Lah is licensed under \href{https://creativecommons.org/licenses/by-sa/4.0/}{CC BY-SA 4.0} \ccbysa \\
+    \thepage
+}
+
+% Naslovnica
+\maketitle
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{Images/UL_PEF-logoHOR-RGB_barv.png}
+\end{figure}
+\thispagestyle{empty}
+\newpage
+\setcounter{page}{1}
+
+% Kazalo
+\tableofcontents
+\newpage
+
+% Uvod
+\section{Uvod}
+Velik del področja računalništva se ukvarja z obdelavo podatkov.
+Za učinkovido obdelavo podatkov pa je pogosto ključno, da so ti podatki pravilno urejeni.
+Tu pridejo v igro algoritmi za urejanje podatkov (\emph{ang. sorting algorithms}).
+Ti algoritmi uredijo podatke v nek določeni vrstni red, da jih lahko naprej obdelujemo.
+
+Čeprav so algoritmi za urejanje podatkov računalniški koncept, nekatere od njih pogosto uporabljamo tudi v vsakdanjem življenju.
+Ko na primer sortiramo paket igralnih kart, nezavedno uporabljamo nek algoritem za urejanje.
+Za lažjo predstavo algoritmov, ki bodo v nadaljevanju predstavljeni, si jih lahko predstavljate tudi, kot da urejamo paket kart, ali pa jih tako celo sami preizkusite.
+
+Tekom te seminarske naloge boste spoznali kaj so algoritmi za urejanje podatkov, $O$-notacijo in nekaj klasičnih primerov takih algoritmov.
+Pri primerih algoritmov boste spoznali njihovo delovanje in učinkovitost, na koncu pa bo predstavljena še primerjava vseh navedenih algoritmov glede na njihovo učinkovitost.
+\newpage
+
+% Osnovni pojmi
+\section{Osnovne definicije}
+\subsection{Algoritmi za urejanje podatkov}
+
+Kot pove že samo ime, je \emph{algoritem za urejanje podatkov} postopek, s katerim elemente seznama uredimo po določenem vrstnem redu.
+Glavna prednost urejanja podatkov je, da je na urejeni množici podatkov bolj učinkovito izvajanje drugih algoritmov (npr.\ iskanje,\ grupiranje,\ itd.).
+Rezultat urejanja podatkov mora biti:
+\begin{enumerate}
+    \item Urejen monotono
+          \begin{itemize}
+              \item Npr. če je seznam urejen naraščajoče, mora biti vsak naslednji element večji ali enak prejšnjemu
+          \end{itemize}
+    \item Permutacija vhodnega nabora elementov
+          \begin{itemize}
+              \item Izhodni nabor elementov mora vsebovati natanko vse elemente, ki so v vhodnem
+          \end{itemize}
+\end{enumerate}
+Nekateri algoritmi so sicer izdelani za zaporedni dostop do podatkov, vendar jih večina predpostavlja, da so podatki shranjeni v bazi, ki omogoča naključni dostop.
+
+Algoritme za urejanje podatkov lahko razdelimo glede na več kriterijev:
+\begin{itemize}
+    \item Tip podatkov
+          \begin{itemize}
+              \item Numerični
+              \item Leksikografski
+          \end{itemize}
+    \item Lokacija hrambe podatkov med izvajanjem
+          \begin{itemize}
+              \item Notranji
+              \item Zunanji
+          \end{itemize}
+    \item Princip urejanja
+          \begin{itemize}
+              \item Zamenjave
+              \item Vstavljanje
+              \item Urejanje po delih
+              \item itd.
+          \end{itemize}
+    \item Prostorsko zahtevnost
+          \begin{itemize}
+              \item Urejanje na mestu
+              \item Kopiranje nabora elementov
+          \end{itemize}
+    \item Časovno zahtevnost
+          \begin{itemize}
+              \item $O$-notacija
+          \end{itemize}
+\end{itemize}
+
+\subsection{$O$-notacija}
+Učinkovitost algoritmov za urejanje podatkov najbolj pogosto merimo glede na njihovo časovno zahtevnost.
+\emph{Časovna zahtevnost} je funkcija, ki nam pove, kako se čas izvajanja algoritma povečuje z večanjem nabora vhodnih podatkov.
+\emph{$O$-notacija} je v zasnovi matematični zapis, ki opisuje približno velikost funkcije oz. domene.
+V računalništvu pa se ta zapis uporablja za opisovanje časovne zahtevnosti programa.\footnote{
+    $O$-notacija se včasih uporabi tudi za zapis prostorske zahtevnosti.
+    V tej seminarski nalogi bo uporabljena samo za zapis časovne zahtevnosti, ki je veliko bolj pogost.}
+Z $O$-notacijo zapišemo, kako (tj. s kakšno funkcijo v odvisnosti od števila vhodnih podatkov) se čas izvajanja algoritma poveča, ko povečujemo velikost nabora vhodnih podatkov.
+
+Ta zapis nam ne poda točnega časa izvajanja algoritma, namreč samo, kako se ta čas povečuje z več podatki.
+To je pomembna razlika, saj imata dva algoritma lahko enako časovno zahtevnost (tj. enako vrednost O), vendar je eden veliko hitrejši od drugega, ker ima na enakem naboru podatkov krajši čas izvajanja.
+
+\begin{mdframed}[backgroundcolor=CadetBlue!50]
+    Za lažje razumevanje tega koncepta vzemimo za primer dva programa ($A$ in $B$), ki imata oba časovno zahtevnost $O(n^{2})$.
+    Program $A$ se pri 100 vhodnih podatkih izvede v 2 sekundah, $B$ pa za obdelavo 100 vhodnih podatkov potrebuje 10 sekund.
+    Oba programa imata $O(n^{2})$, torej bosta za obdelavo $2n$ podatkov potrebovala $(2n)^{2} = 4n^{2}$ časa.
+    Torej, če program $A$ 100 podatkov obdela v 2 sekundah, bo za 200 podatkov potreboval 16 ($4 \cdot 2^{2}$) sekund.
+    Program $B$, ki 100 podatkov obdela v 10 sekundah, pa bo za 200 podatkov potreboval 400 ($4 \cdot 10^{2}$) sekund.
+    Program $A$ je torej veliko hitrejši kot $B$, vseeno pa imata enako časovno zahtevnost.
+\end{mdframed}
+
+$O$-notacija je torej samo v pomoč, da lahko programer hitrejše oceni učinkovitost programa.
+
+Seveda so programi vedno sestavljeni iz več funkcij.
+Pomembno se je zavedati, da je program le toliko učinkovit kot najšibkejši člen v verigi.
+Če ima torej program 10 funkcij s časovno zahtevnostjo $O(n)$ in eno z zahtevnostjo $O(n^{2})$, potem ima celoten program časovno zahtevnost $O(n^{2})$.
+
+\section[Pogosti algoritmi]{Pogosti aloritmi za urejanje podatkov}
+Obstaja veliko različnih algoritmov za urejanje podatkov.
+So različno učnkoviti in najbolj primerni za razne nabore podatkov.
+V nadaljevanju so predstavljeni nekateri najbolj pogosti.
+\textit{Imena algoritmov bodo napisana v angleščini, saj to tudi bralcu olajša iskanje novih informacij, ker je angleških virov na to temo veliko več.}
+
+\subsection{Bubble sort}
+Bubble sort (oz. mehurčno urejanje) uredi podatke po velikosti, tako da primerja sosednje pare elementov med seboj.
+
+\begin{mdframed}[backgroundcolor=CadetBlue!50]
+    Bubble sort najprej primerja prva dva elementa (\textit{elementa 0 in 1}) v vhodnem seznamu.
+    Če je prvi večji od drugega, jih zamenja, v nasprotnem primeru pa jih pusti v enakem vrstnem redu.
+    Nadaljuje na naslednji par elementov (\textit{elementa 1 in 2}).
+    Ponovno ju primerja in zamenja vrstni red, če je prvi večji od drugega.
+    Tako nadaljuje, dokler ne doseže konca seznama.
+    S tem je algoritem premaknil največji element do konca seznama.
+    Ponovno začne na začetku seznama in ponovi enak postopek.
+    Ko algoritem pride skozi celoten seznam, brez da bi kakšen par elementov zamenjal, je seznam urejen.
+\end{mdframed}
+
+Bubble sort algoritem je zelo enostaven za razumevanje in implementiranje, vendar je tudi zelo neučinkovit.
+Če ima vhodni seznam 10 elementov, bo v najslabšem primeru (če je seznam ravno nasprotno urejen) 10-krat opraviti 10 operacij.
+Torej ima bubble sort algoritem v povprečju časovno zahtevnost $O(n^{2})$, kar je ena izmed slabših pogostih časovnih zahtevnosti.
+Tudi v najboljšem primeru bo bubble sort moral izvesti $n$ operacij, torej ima v najboljšem možnem primeru časovno zahtevnost $O(n)$.
+
+\subsection{Insertion sort}
+Insertion sort (oz. urejanje z navadnim vstavljanjem) ureja podatke na podoben način, kot ga običajno uporabljamo ljudje.
+Deluje podobno, kot nekdo, ki ureja igralne karte v roki.
+
+\begin{mdframed}[backgroundcolor=CadetBlue!50]
+    Insertion sort najprej pogleda element \textit{1} in ga primerja z elementom \textit{1}.
+    Če sta v napačnem vrstnem redu, jih zamenja.
+    Zatem pogleda element \textit{2} in ga primerja z elementom \textit{1}.
+    Če sta v napačnem vrstnem redu, jih zamenja in se nato vrne nazaj na par elementov \textit{0} in \textit{1}, na katerih ponovno ponovi enak korak.
+    Ta proces nadaljuje dokler ne pride do konca seznama.
+    Tako ko naleti na element, ki ni na pravem mestu, ta element premakne proti začetku seznama, dokler ni \emph{vstavljen} med manjši element pred njim in večji element za njim.
+\end{mdframed}
+
+Insertion sort algoritem je v večini primerov hitrejši od algoritma bubble sort, vendar pa ima prav tako časovno zahtevnost $O(n^{2})$.
+
+\subsection{Quick sort}
+Quick sort (oz. hitro urejanje) v delovanju spominja na proces bisekcije.
+
+\begin{mdframed}[backgroundcolor=CadetBlue!50]
+    Quick sort si izbere enega od elementov v seznamu in ga določi za os.
+    Vse manjše elemente prestavi pred os, vse večje pa za njo.
+    Zatem si znotraj manjše strani izbere novo os in ponovno ostale elemente postavi na eno ali drugo stran osi, glede na velikost.
+    Enako ponovi tudi na drugi strani prvotne osi.
+    Enak postopek ponavlja naprej, dokler ni seznam urejen.
+\end{mdframed}
+
+Quick sort algoritem ima v najslabšem primeru prav tako časovno zahtevnost $O(n^{2})$.
+Vendar pa je njegova časovna zahtevnost takšna res le v najslabšem primeru, torej ko je začetni seznam nasprotno urejen.
+Povprečna časovna zahtevnost quick sort algoritma pa je $O(n \log(n))$.
+
+\subsection{Selection sort}
+
+Selection sort (oz. urejanje z navadnim izbiranjem) ureja seznam s postopnim premikanjem najmanjšega od preostalih elementov na začetek.
+
+\begin{mdframed}[backgroundcolor=CadetBlue!50]
+    Selection sort pogleda prvi element v seznamu.
+    Če je ta najmanjši, nadaljuje v naslednji korak.
+    V nasprotnem primeru pa med preostalimi elementi najde najmanjšega in ga zamenja s prvim.
+    Nato nadaljuje na drugi element seznama in ga na enak način zamenja z najmanjšim od preostalih.
+    Ta postopek ponavlja do zadnjega elementa seznama.
+\end{mdframed}
+
+Čeprav selection sort algoritem na prvi pogled izgleda hitrejši od ostalih, ima tudi ta časovno zahtevnost $O(n^{2})$.
+Še več, za razliko od prejšnjih algoritmov selection sort v nobenem primeru nima boljše časovne zahtevnosti, vedno je njegova časovna zahtevnost $O(n^{2})$.
+
+\subsection{Counting sort}
+
+Vsi algoritmi, ki smo jih pogledali do sedaj, so \emph{primerjalni algoritmi}, torej tekom svojega delovanja primerjajo dva elementa med seboj.
+Counting sort (oz. urejanje s štetjem) pa je \emph{neprimerjalen algoritem}, torej na nobeni točki tekom delovanja ne bo primerjal dveh elementov vhodnega seznama.
+
+\begin{mdframed}[backgroundcolor=CadetBlue!50]
+    Counting sort najprej poišče največji element seznama (\textit{označimo $k$}) in si ustvari nov začasni seznam dolžine $k+1$, kjer imajo vsi elementi vrednost $0$.
+    \begin{align*}
+        \text{Začetni seznam: } & [2,5,3,0,2,3,0,3]
+        \\
+        \text{Začasni seznam: } & [0,0,0,0,0,0]
+    \end{align*}
+    Potem pogleda prvi element seznama, recimo $p$.
+    V začasnem seznamu vrednost na indeksu $p$ poveča za 1.\footnote{
+        Indeksiranje seznamov v računalniku se začne z 0, zato je v tem primeru pri $p=2$ povečan tretji element začasnega seznama, ki ima indeks 2.
+    }
+    \begin{align*}
+        \text{Začetni seznam: } & [2,5,3,0,2,3,0,3]
+        \\
+        \text{Začasni seznam: } & [0,0,1,0,0,0]
+    \end{align*}
+    Nadaljuje na drugi element vhodnega seznama in ponovi enak korak.
+    \begin{align*}
+        \text{Začetni seznam: } & [2,5,3,0,2,3,0,3]
+        \\
+        \text{Začasni seznam: } & [0,0,1,0,0,1]
+    \end{align*}
+    Tako nadaljuje do konca seznama.
+    Na tej točki ima začasni seznam na vsakem indeksu zapisano število pojavitev tega indeksa.
+    \begin{align*}
+        \text{Začetni seznam: } & [2,5,3,0,2,3,0,3]
+        \\
+        \text{Začasni seznam: } & [2,0,2,3,0,1]
+    \end{align*}
+    Sedaj pa se algoritem le še sprehodi skozi začasni seznam in pri vsakemu elementu $x$, ki ima indeks $i$ v odgovor zapiše $x$-krat vrednost $i$.\footnote{
+        Torej prvi element začasnega seznama ima indeks $0$ in vrednost $2$, zato v odgovor zapiše $2$-krat število $0$.
+        Drugi element začasnega seznama ima indeks $1$ in vrednost $0$, zato v odgovoru ni nobenega števila $1$ in nadaljuje na naslednji element začasnega seznama.
+    }
+    \begin{align*}
+        \text{Začetni seznam: } & [2,5,3,0,2,3,0,3]
+        \\
+        \text{Začasni seznam: } & [2,0,2,3,0,1]
+        \\
+        \text{Odgovor: }        & [0,0,2,2,3,3,3,5]
+    \end{align*}
+\end{mdframed}
+
+Counting sort algoritem ima eno najboljših časovnih zahtevnosti, in sicer $O(n+k)$, kjer je $k$ vrednost največjega elementa vhodnega seznama.
+Za prej omenjene \emph{primerjalne algoritme} je matematično dokazano, da je najboljša povprečna časovna zahtevnost, ki jo lahko dosežejo $O(n \log(n))$,
+ker pa je counting sort \emph{neprimerjalni algoritem} lahko doseže linearno časovno kompleksnost, ki pa je skoraj najnižja možna (boljši sta le $O(c)$ in $O(\log(n))$).
+\subsection{Bogosort}
+
+Na koncu pa predstavimo še zabaven primer računalniškega principa {\glqq}\emph{poskusi in preveri}.{\grqq}
+Bogosort (oz. naključno urejanje) je zelo preprost, a hkrati izjemno počasen algoritem za urejanje podatkov.
+
+\begin{mdframed}[backgroundcolor=CadetBlue!50]
+    Bogosort najprej preveri, če je seznam urejen.
+    Če je, je algoritem zaključen.
+    Če ni, elementom določi naključni vrstni red (seznam \textit{randomizira}).
+    To ponavlja, dokler seznam ni urejen.
+\end{mdframed}
+
+Bogosort algoritem je najslabši od vseh algoritmov, predstavljenih v tej nalogi.
+Njegova povprečna časovna zahtevnost je $O(n \cdot n!)$.
+\newpage
+
+\section{Primerjava časovnih zahtevnosti}
+
+Poleg časovnih zahtevnosti algoritmov, ki so bili predstavljeni v nalogi, poznamo tudi nekaj drugih.
+Najprej lahko naredimo pregled predstavljenih algoritmov in njihovih časovnih zahtevnosti, nato pa še grafični prikaz $O$-funkcij za lažjo primerjavo učinkovitosti programov:
+
+\vspace{1cm}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{cc}
+        \toprule
+        Algoritem      & Povprečna časovna zahtevnost \\
+        \midrule
+        Bubble sort    & \multirow{3}{*}{$O(n^{2})$}  \\
+        Insertion sort &                              \\
+        Selection sort &                              \\
+        \midrule
+        Quick sort     & $n \log(n)$                  \\
+        \midrule
+        Counting sort  & $O(n+k)$                     \\
+        \midrule
+        Bogosort       & $O(n \cdot n!)$              \\
+        \bottomrule
+    \end{tabular}
+    \caption{Časovne zahtevnosti predstavljenih algoritmov}
+\end{table}
+
+\vspace{1cm}
+
+\begin{figure}[h]
+    \centering
+    \begin{mdframed}[innerrightmargin=-4.5cm]
+        \includegraphics[width=0.7\textwidth]{Images/Grafi_O.png}
+    \end{mdframed}
+    \caption{Grafi funkcij časovne zahtevnosti}
+\end{figure}
+
+%Viri
+\nocite{*}
+\newpage
+\printbibliography[title=Viri]
+
+\end{document}
