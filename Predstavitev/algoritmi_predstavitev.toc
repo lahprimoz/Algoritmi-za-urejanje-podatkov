@@ -1,0 +1,12 @@
+\babel@toc {slovene}{}\relax 
+\beamer@sectionintoc {1}{Definicije}{5}{0}{1}
+\beamer@subsectionintoc {1}{1}{Algoritem za urejanje podatkov}{5}{0}{1}
+\beamer@subsectionintoc {1}{2}{$O$-notacija}{13}{0}{1}
+\beamer@sectionintoc {2}{Pogosti algoritmi za urejanje podatkov}{18}{0}{2}
+\beamer@subsectionintoc {2}{1}{Bubble sort}{18}{0}{2}
+\beamer@subsectionintoc {2}{2}{Insertion sort}{29}{0}{2}
+\beamer@subsectionintoc {2}{3}{Quick sort}{44}{0}{2}
+\beamer@subsectionintoc {2}{4}{Selection sort}{58}{0}{2}
+\beamer@subsectionintoc {2}{5}{Counting sort}{73}{0}{2}
+\beamer@subsectionintoc {2}{6}{Bogosort}{99}{0}{2}
+\beamer@sectionintoc {3}{Primerjava časovnih zahtevnosti}{106}{0}{3}

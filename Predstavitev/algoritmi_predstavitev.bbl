@@ -1,0 +1,331 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{brilliant:CountSort}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=1bc510195917ad4ae6460564740c4490}{%
+           family={Brilliant.org},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{1bc510195917ad4ae6460564740c4490}
+      \strng{fullhash}{1bc510195917ad4ae6460564740c4490}
+      \strng{fullhashraw}{1bc510195917ad4ae6460564740c4490}
+      \strng{bibnamehash}{1bc510195917ad4ae6460564740c4490}
+      \strng{authorbibnamehash}{1bc510195917ad4ae6460564740c4490}
+      \strng{authornamehash}{1bc510195917ad4ae6460564740c4490}
+      \strng{authorfullhash}{1bc510195917ad4ae6460564740c4490}
+      \strng{authorfullhashraw}{1bc510195917ad4ae6460564740c4490}
+      \field{extraname}{1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[Na spletu; pridobljeno januar-2026]}
+      \field{title}{Counting Sort}
+      \field{year}{2026}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://brilliant.org/wiki/counting-sort/
+      \endverb
+      \verb{url}
+      \verb https://brilliant.org/wiki/counting-sort/
+      \endverb
+    \endentry
+    \entry{brilliant:SortAlgs}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=1bc510195917ad4ae6460564740c4490}{%
+           family={Brilliant.org},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{1bc510195917ad4ae6460564740c4490}
+      \strng{fullhash}{1bc510195917ad4ae6460564740c4490}
+      \strng{fullhashraw}{1bc510195917ad4ae6460564740c4490}
+      \strng{bibnamehash}{1bc510195917ad4ae6460564740c4490}
+      \strng{authorbibnamehash}{1bc510195917ad4ae6460564740c4490}
+      \strng{authornamehash}{1bc510195917ad4ae6460564740c4490}
+      \strng{authorfullhash}{1bc510195917ad4ae6460564740c4490}
+      \strng{authorfullhashraw}{1bc510195917ad4ae6460564740c4490}
+      \field{extraname}{2}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[Na spletu; pridobljeno januar-2026]}
+      \field{title}{Sorting Algorithms}
+      \field{year}{2026}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://brilliant.org/wiki/sorting-algorithms/
+      \endverb
+      \verb{url}
+      \verb https://brilliant.org/wiki/sorting-algorithms/
+      \endverb
+    \endentry
+    \entry{gfg:SortingAlgs}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=e035fc87801e463836c4b83f23ce07c7}{%
+           family={Geeks},
+           familyi={G\bibinitperiod},
+           given={Geeks},
+           giveni={G\bibinitperiod},
+           prefix={for},
+           prefixi={f\bibinitperiod}}}%
+      }
+      \strng{namehash}{e035fc87801e463836c4b83f23ce07c7}
+      \strng{fullhash}{e035fc87801e463836c4b83f23ce07c7}
+      \strng{fullhashraw}{e035fc87801e463836c4b83f23ce07c7}
+      \strng{bibnamehash}{e035fc87801e463836c4b83f23ce07c7}
+      \strng{authorbibnamehash}{e035fc87801e463836c4b83f23ce07c7}
+      \strng{authornamehash}{e035fc87801e463836c4b83f23ce07c7}
+      \strng{authorfullhash}{e035fc87801e463836c4b83f23ce07c7}
+      \strng{authorfullhashraw}{e035fc87801e463836c4b83f23ce07c7}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[Na spletu; pridobljeno januar-2026]}
+      \field{title}{Sorting Algorithms}
+      \field{year}{2025}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.geeksforgeeks.org/dsa/sorting-algorithms/
+      \endverb
+      \verb{url}
+      \verb https://www.geeksforgeeks.org/dsa/sorting-algorithms/
+      \endverb
+    \endentry
+    \entry{medium:UnderstandingSortAlgs}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=53371f0db317a62c6e639ed69aab462c}{%
+           family={Long},
+           familyi={L\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{53371f0db317a62c6e639ed69aab462c}
+      \strng{fullhash}{53371f0db317a62c6e639ed69aab462c}
+      \strng{fullhashraw}{53371f0db317a62c6e639ed69aab462c}
+      \strng{bibnamehash}{53371f0db317a62c6e639ed69aab462c}
+      \strng{authorbibnamehash}{53371f0db317a62c6e639ed69aab462c}
+      \strng{authornamehash}{53371f0db317a62c6e639ed69aab462c}
+      \strng{authorfullhash}{53371f0db317a62c6e639ed69aab462c}
+      \strng{authorfullhashraw}{53371f0db317a62c6e639ed69aab462c}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{12}
+      \field{note}{[Na spletu; pridobljeno januar-2026]}
+      \field{title}{Understanding Sorting Algorithms}
+      \field{year}{2017}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://medium.com/jl-codes/understanding-sorting-algorithms-af6222995c8
+      \endverb
+      \verb{url}
+      \verb https://medium.com/jl-codes/understanding-sorting-algorithms-af6222995c8
+      \endverb
+    \endentry
+    \entry{Tom_Scott}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=891d87ab885a82338effd60bb38b7b27}{%
+           family={Scott},
+           familyi={S\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{891d87ab885a82338effd60bb38b7b27}
+      \strng{fullhash}{891d87ab885a82338effd60bb38b7b27}
+      \strng{fullhashraw}{891d87ab885a82338effd60bb38b7b27}
+      \strng{bibnamehash}{891d87ab885a82338effd60bb38b7b27}
+      \strng{authorbibnamehash}{891d87ab885a82338effd60bb38b7b27}
+      \strng{authornamehash}{891d87ab885a82338effd60bb38b7b27}
+      \strng{authorfullhash}{891d87ab885a82338effd60bb38b7b27}
+      \strng{authorfullhashraw}{891d87ab885a82338effd60bb38b7b27}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{YouTube}
+      \field{month}{01}
+      \field{title}{Why My Teenage Code Was Terrible: Sorting Algorithms and Big O Notation}
+      \field{year}{2020}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.youtube.com/watch?v=RGuJga2Gl_k
+      \endverb
+      \verb{url}
+      \verb https://www.youtube.com/watch?v=RGuJga2Gl_k
+      \endverb
+    \endentry
+    \entry{visualgo}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=49c1b86997b0cc37cbb1184ea074fa62}{%
+           family={VisualGO},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{49c1b86997b0cc37cbb1184ea074fa62}
+      \strng{fullhash}{49c1b86997b0cc37cbb1184ea074fa62}
+      \strng{fullhashraw}{49c1b86997b0cc37cbb1184ea074fa62}
+      \strng{bibnamehash}{49c1b86997b0cc37cbb1184ea074fa62}
+      \strng{authorbibnamehash}{49c1b86997b0cc37cbb1184ea074fa62}
+      \strng{authornamehash}{49c1b86997b0cc37cbb1184ea074fa62}
+      \strng{authorfullhash}{49c1b86997b0cc37cbb1184ea074fa62}
+      \strng{authorfullhashraw}{49c1b86997b0cc37cbb1184ea074fa62}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[Na spletu; pridobljeno januar-2026]}
+      \field{title}{Sorting}
+      \field{year}{2015}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://visualgo.net/en/sorting
+      \endverb
+      \verb{url}
+      \verb https://visualgo.net/en/sorting
+      \endverb
+    \endentry
+    \entry{enwiki:BigO}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
+           family={{Wikipedia contributors}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
+      \field{extraname}{1}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[Na spletu; pridobljeno januar-2026]}
+      \field{title}{Big O notation --- {Wikipedia}{,} The Free Encyclopedia}
+      \field{year}{2025}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/w/index.php?title=Big_O_notation&oldid=1330480633
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Big_O_notation&oldid=1330480633
+      \endverb
+    \endentry
+    \entry{enwiki:SortAlg}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
+           family={{Wikipedia contributors}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
+      \field{extraname}{2}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[Na spletu; pridobljeno januar-2026]}
+      \field{title}{Sorting algorithm --- {Wikipedia}{,} The Free Encyclopedia}
+      \field{year}{2026}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/w/index.php?title=Sorting_algorithm&oldid=1331211744
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Sorting_algorithm&oldid=1331211744
+      \endverb
+    \endentry
+    \entry{wiki:AlgZaUrPod}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=00dd428d5649284ced2a760851130594}{%
+           family={Wikipedija},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{00dd428d5649284ced2a760851130594}
+      \strng{fullhash}{00dd428d5649284ced2a760851130594}
+      \strng{fullhashraw}{00dd428d5649284ced2a760851130594}
+      \strng{bibnamehash}{00dd428d5649284ced2a760851130594}
+      \strng{authorbibnamehash}{00dd428d5649284ced2a760851130594}
+      \strng{authornamehash}{00dd428d5649284ced2a760851130594}
+      \strng{authorfullhash}{00dd428d5649284ced2a760851130594}
+      \strng{authorfullhashraw}{00dd428d5649284ced2a760851130594}
+      \field{extraname}{1}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[Na spletu; pridobljeno januar-2026]}
+      \field{title}{Algoritmi za urejanje podatkov --- Wikipedija{,} prosta enciklopedija}
+      \field{year}{2016}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://sl.wikipedia.org/w/index.php?title=Algoritmi_za_urejanje_podatkov&oldid=4610223
+      \endverb
+      \verb{url}
+      \verb https://sl.wikipedia.org/w/index.php?title=Algoritmi_za_urejanje_podatkov&oldid=4610223
+      \endverb
+    \endentry
+    \entry{wiki:CasZaht}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=00dd428d5649284ced2a760851130594}{%
+           family={Wikipedija},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{00dd428d5649284ced2a760851130594}
+      \strng{fullhash}{00dd428d5649284ced2a760851130594}
+      \strng{fullhashraw}{00dd428d5649284ced2a760851130594}
+      \strng{bibnamehash}{00dd428d5649284ced2a760851130594}
+      \strng{authorbibnamehash}{00dd428d5649284ced2a760851130594}
+      \strng{authornamehash}{00dd428d5649284ced2a760851130594}
+      \strng{authorfullhash}{00dd428d5649284ced2a760851130594}
+      \strng{authorfullhashraw}{00dd428d5649284ced2a760851130594}
+      \field{extraname}{2}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[Na spletu; pridobljeno januar-2026]}
+      \field{title}{Časovna zahtevnost --- Wikipedija{,} prosta enciklopedija}
+      \field{year}{2022}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://sl.wikipedia.org/w/index.php?title=%C4%8Casovna_zahtevnost&oldid=5794524
+      \endverb
+      \verb{url}
+      \verb https://sl.wikipedia.org/w/index.php?title=%C4%8Casovna_zahtevnost&oldid=5794524
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

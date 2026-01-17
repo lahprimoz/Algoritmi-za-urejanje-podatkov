@@ -1,0 +1,84 @@
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\slideentry {0}{0}{2}{2/4}{}{0}}
+\headcommand {\beamer@framepages {2}{4}}
+\headcommand {\beamer@sectionpages {1}{4}}
+\headcommand {\beamer@subsectionpages {1}{4}}
+\headcommand {\sectionentry {1}{Definicije}{5}{Definicije}{0}}
+\headcommand {\beamer@subsectionpages {5}{4}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{5}{Algoritem za urejanje podatkov}}
+\headcommand {\slideentry {1}{1}{1}{5/7}{Algoritem za urejanje podatkov}{0}}
+\headcommand {\beamer@framepages {5}{7}}
+\headcommand {\slideentry {1}{1}{2}{8/10}{Algoritem za urejanje podatkov}{0}}
+\headcommand {\beamer@framepages {8}{10}}
+\headcommand {\slideentry {1}{1}{3}{11/12}{Algoritem za urejanje podatkov}{0}}
+\headcommand {\beamer@framepages {11}{12}}
+\headcommand {\beamer@subsectionpages {5}{12}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{13}{$O$-notacija}}
+\headcommand {\slideentry {1}{2}{1}{13/14}{$O$-notacija}{0}}
+\headcommand {\beamer@framepages {13}{14}}
+\headcommand {\slideentry {1}{2}{2}{15/16}{$O$-notacija}{0}}
+\headcommand {\beamer@framepages {15}{16}}
+\headcommand {\slideentry {1}{2}{3}{17/17}{$O$-notacija}{0}}
+\headcommand {\beamer@framepages {17}{17}}
+\headcommand {\beamer@sectionpages {5}{17}}
+\headcommand {\beamer@subsectionpages {13}{17}}
+\headcommand {\sectionentry {2}{Pogosti algoritmi}{18}{Pogosti algoritmi za urejanje podatkov}{0}}
+\headcommand {\beamer@subsectionpages {18}{17}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{18}{Bubble sort}}
+\headcommand {\slideentry {2}{1}{1}{18/18}{Bubble sort}{0}}
+\headcommand {\beamer@framepages {18}{18}}
+\headcommand {\slideentry {2}{1}{2}{19/28}{Bubble sort}{0}}
+\headcommand {\beamer@framepages {19}{28}}
+\headcommand {\beamer@subsectionpages {18}{28}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{29}{Insertion sort}}
+\headcommand {\slideentry {2}{2}{1}{29/29}{Insertion sort}{0}}
+\headcommand {\beamer@framepages {29}{29}}
+\headcommand {\slideentry {2}{2}{2}{30/43}{Insertion sort}{0}}
+\headcommand {\beamer@framepages {30}{43}}
+\headcommand {\beamer@subsectionpages {29}{43}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{44}{Quick sort}}
+\headcommand {\slideentry {2}{3}{1}{44/44}{Quick sort}{0}}
+\headcommand {\beamer@framepages {44}{44}}
+\headcommand {\slideentry {2}{3}{2}{45/57}{Quick sort}{0}}
+\headcommand {\beamer@framepages {45}{57}}
+\headcommand {\beamer@subsectionpages {44}{57}}
+\headcommand {\beamer@subsectionentry {0}{2}{4}{58}{Selection sort}}
+\headcommand {\slideentry {2}{4}{1}{58/59}{Selection sort}{0}}
+\headcommand {\beamer@framepages {58}{59}}
+\headcommand {\slideentry {2}{4}{2}{60/72}{Selection sort}{0}}
+\headcommand {\beamer@framepages {60}{72}}
+\headcommand {\beamer@subsectionpages {58}{72}}
+\headcommand {\beamer@subsectionentry {0}{2}{5}{73}{Counting sort}}
+\headcommand {\slideentry {2}{5}{1}{73/73}{Counting sort}{0}}
+\headcommand {\beamer@framepages {73}{73}}
+\headcommand {\slideentry {2}{5}{2}{74/84}{Counting sort}{0}}
+\headcommand {\beamer@framepages {74}{84}}
+\headcommand {\slideentry {2}{5}{3}{85/98}{Counting sort}{0}}
+\headcommand {\beamer@framepages {85}{98}}
+\headcommand {\beamer@subsectionpages {73}{98}}
+\headcommand {\beamer@subsectionentry {0}{2}{6}{99}{Bogosort}}
+\headcommand {\slideentry {2}{6}{1}{99/99}{Bogosort}{0}}
+\headcommand {\beamer@framepages {99}{99}}
+\headcommand {\slideentry {2}{6}{2}{100/105}{Bogosort}{0}}
+\headcommand {\beamer@framepages {100}{105}}
+\headcommand {\beamer@sectionpages {18}{105}}
+\headcommand {\beamer@subsectionpages {99}{105}}
+\headcommand {\sectionentry {3}{Primerjava časovnih zahtevnosti}{106}{Primerjava časovnih zahtevnosti}{0}}
+\headcommand {\slideentry {3}{0}{1}{106/106}{}{0}}
+\headcommand {\beamer@framepages {106}{106}}
+\headcommand {\slideentry {3}{0}{2}{107/107}{}{0}}
+\headcommand {\beamer@framepages {107}{107}}
+\headcommand {\beamer@sectionpages {106}{107}}
+\headcommand {\beamer@subsectionpages {106}{107}}
+\headcommand {\sectionentry {4}{Viri}{108}{Viri}{0}}
+\headcommand {\beamer@sectionpages {108}{107}}
+\headcommand {\beamer@subsectionpages {108}{107}}
+\headcommand {\sectionentry {5}{Literatura}{108}{Literatura}{0}}
+\headcommand {\slideentry {5}{0}{0}{108/108}{}{0}}
+\headcommand {\beamer@framepages {108}{108}}
+\headcommand {\beamer@partpages {1}{108}}
+\headcommand {\beamer@subsectionpages {108}{108}}
+\headcommand {\beamer@sectionpages {108}{108}}
+\headcommand {\beamer@documentpages {108}}
+\headcommand {\gdef \inserttotalframenumber {24}}
